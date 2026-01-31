@@ -1,157 +1,66 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Store | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.topbar {
-  background: #000;
-  color: #fff;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+<header class="topbar">
+  <h1>AYAT AND DUA COLLECTIONS</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-nav a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
-}
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Premium Wooden Products</h2>
+    <p>Handcrafted • Durable • Customizable</p>
+    <a href="shop.html" class="btn">Shop Now</a>
+  </div>
+</section>
 
-.hero {
-  height: 420px;
-  background: url("https://via.placeholder.com/1200x420") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  padding-left: 60px;
-}
+<!-- CATEGORY BANNERS -->
+<section class="banners">
+  <a href="new-arrivals.html" class="banner">New Arrivals</a>
+  <a href="offers.html" class="banner dark">Offers</a>
+</section>
 
-.hero-text {
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  padding: 30px;
-}
 
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  background: #000;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-}
 
-.banners {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 30px;
-}
+<!-- BESTSELLERS -->
+<section class="section">
+  <h2>Bestsellers</h2>
 
-.banner {
-  background: #ddd;
-  padding: 60px;
-  text-align: center;
-  font-size: 22px;
-}
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/250">
+      <h3>Wooden Handle</h3>
+      <p>₹0</p>
+    </div>
 
-.banner.dark {
-  background: #111;
-  color: white;
-}
+    <div class="product">
+      <img src="https://via.placeholder.com/250">
+      <h3>Knob Set</h3>
+      <p>₹0</p>
+    </div>
 
-.section {
-  text-align: center;
-  padding: 30px;
-}
+    <div class="product">
+      <img src="https://via.placeholder.com/250">
+      <h3>Custom Item</h3>
+      <p>₹0</p>
+    </div>
+  </div>
+</section>
 
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
+<footer>
+  © 2026 ayatandduacollections.
+</footer>
 
-.product {
-  background: white;
-  padding: 15px;
-  border-radius: 6px;
-}
-
-.product img {
-  width: 100%;
-}
-
-footer {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-@media (max-width: 768px) {
-
-  .topbar {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
-
-  nav a {
-    margin: 0 10px;
-  }
-
-  .hero {
-    height: auto;
-    padding: 40px 20px;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .hero-text {
-    padding: 20px;
-  }
-
-  .banners {
-    grid-template-columns: 1fr;
-  }
-
-  .banner {
-    padding: 40px 20px;
-    font-size: 20px;
-  }
-
-  .products {
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
-
-  .product {
-    padding: 20px;
-  }
-
-  footer {
-    font-size: 14px;
-  }
-}
-
-/* EXTRA SMALL PHONES */
-@media (max-width: 480px) {
-
-  .hero-text h2 {
-    font-size: 22px;
-  }
-
-  .btn {
-    padding: 10px 16px;
-    font-size: 14px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 8px;
-  }
-}
+</body>
+</html>
